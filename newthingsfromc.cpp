@@ -1,5 +1,3 @@
-//C++ needs the g++ compiler, while C uses gcc
-
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -8,7 +6,7 @@
 //constants
 #define SOME_CONSTANT 10 //defined constant is capitalized by convention. This method is useful because it doens't take up memory
 const int woof = 30; //another way to define a constant is to qualify a variable with as 'const'
-enum { myConst = 4 };
+enum { myConst = 4 }; //or this.
 
 using namespace std; //a namespace is a set of names that prevent naming conflicts with objects in various modules
 
@@ -49,6 +47,7 @@ int main() {
     ofstream output_file; //create output file so we can write data to file that we will open. ifstream is for reading data only.
     output_file.open("name.txt"); //open file
     string name;
+
     getline(cin, name); //get name from user
     output_file << name << endl; //write the input to name.txt
     output_file.close(); //close file
